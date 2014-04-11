@@ -375,6 +375,17 @@ namespace ContourAnalysisDemo
 
         private void btLoadImage_Click_1(object sender, EventArgs e)
         {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Image|*.bmp;*.png;*.jpg;*.jpeg";
+            if (ofd.ShowDialog(this) == System.Windows.Forms.DialogResult.OK)
+                try
+                {
+                    frame = new Image<Bgr, byte>((Bitmap)Bitmap.FromFile(ofd.FileName));
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
 
         }
 
