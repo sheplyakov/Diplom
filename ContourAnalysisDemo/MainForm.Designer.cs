@@ -145,6 +145,7 @@
             this.btLoadImage.TabIndex = 8;
             this.btLoadImage.Text = "Открыть изображение";
             this.btLoadImage.UseVisualStyleBackColor = true;
+            this.btLoadImage.Click += new System.EventHandler(this.btLoadImage_Click_1);
             // 
             // cbCaptureFromCam
             // 
@@ -157,6 +158,7 @@
             this.cbCaptureFromCam.TabIndex = 9;
             this.cbCaptureFromCam.Text = "checkBox1";
             this.cbCaptureFromCam.UseVisualStyleBackColor = true;
+            this.cbCaptureFromCam.CheckedChanged += new System.EventHandler(this.cbCaptureFromCam_CheckedChanged);
             // 
             // MainForm
             // 

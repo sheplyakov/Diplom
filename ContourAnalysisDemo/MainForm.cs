@@ -368,6 +368,16 @@ namespace ContourAnalysisDemo
 
         }
 
+        private void cbCaptureFromCam_CheckedChanged(object sender, EventArgs e)
+        {
+            ApplySettings();
+        }
+
+        private void btLoadImage_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
 
 
 
